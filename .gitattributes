@@ -121,4 +121,4 @@ lib-src/rcs2log diff=shell
 # whitespace.
 java/INSTALL -whitespace
 
-*.sh eol=lf
+*.sh text eol=lf

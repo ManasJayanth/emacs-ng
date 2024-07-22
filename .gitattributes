@@ -120,3 +120,5 @@ lib-src/rcs2log diff=shell
 # This file contains in-line diffs, which can include trailing
 # whitespace.
 java/INSTALL -whitespace
+
+*.sh eol=lf

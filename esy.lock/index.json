@@ -1,0 +1,47 @@
+{
+  "checksum": "f95a9cb1348e42b31833b6ee4f7bc2e9",
+  "root": "emacs-ng@link-dev:./esy.json",
+  "node": {
+    "esy-help2man@github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443@d41d8cd9": {
+      "id": "esy-help2man@github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443@d41d8cd9",
+      "name": "esy-help2man",
+      "version": "github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-autoconf@github:esy-packages/esy-autoconf#fb93edf57b0adc4b27b34a57a562395b224002d3@d41d8cd9": {
+      "id": "esy-autoconf@github:esy-packages/esy-autoconf#fb93edf57b0adc4b27b34a57a562395b224002d3@d41d8cd9",
+      "name": "esy-autoconf",
+      "version": "github:esy-packages/esy-autoconf#fb93edf57b0adc4b27b34a57a562395b224002d3",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-autoconf#fb93edf57b0adc4b27b34a57a562395b224002d3"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-help2man@github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "emacs-ng@link-dev:./esy.json": {
+      "id": "emacs-ng@link-dev:./esy.json",
+      "name": "emacs-ng",
+      "version": "link-dev:./esy.json",
+      "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
+      "overrides": [],
+      "dependencies": [
+        "esy-autoconf@github:esy-packages/esy-autoconf#fb93edf57b0adc4b27b34a57a562395b224002d3@d41d8cd9"
+      ],
+      "devDependencies": []
+    }
+  }
+}
